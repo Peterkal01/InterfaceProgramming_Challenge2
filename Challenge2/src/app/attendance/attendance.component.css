@@ -1,0 +1,17 @@
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+.xButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Attendance{
+    border: 2px dotted black;
+    padding: 7px;
+    margin: 10px;
+}

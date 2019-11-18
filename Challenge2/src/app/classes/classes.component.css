@@ -1,0 +1,18 @@
+.classesBox{
+    border: 2px dotted black;
+    padding: 7px;
+    margin: 10px;
+
+}
+
+.IPBox{
+    border: 1px solid black;
+    padding: 7px;
+    margin: 5px;
+}
+
+.OOProg{
+    border: 1px solid black;
+    padding: 7px;
+    margin: 5px;
+}
