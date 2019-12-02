@@ -2,11 +2,24 @@
     <div>
         <h1>Classes</h1>
     </div>
-    <div><button>Fetch Classes</button></div>
+    <div>
+        <button (click)="fetchclassService.fetchClasses()">Get Classes</button>
+    </div>
+    <ul>
+        <li *ngFor='let classes of fetchclassService.classes'>
+            <h3>{{classes.name}}</h3>
+            <div>
+                <button (click)="fetchattendanceService.fetchAttendance(classes.classId)">View Attendance</button>
+            </div>
+
+        </li>
+    </ul>
 
     <hr>
 
-    <div class="IPBox">
+
+
+    <!-- <div class="IPBox"> 
         <div>
             <h2>Interface Programing</h2>
         </div>
@@ -26,4 +39,4 @@
         </div>
         <div><Button>View Attendance</Button></div>
     </div>
-</div>
+</div> -->

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FetchClassService } from './fetch-class.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Challenge2';
+
+  constructor(public fetchclassService: FetchClassService){
+
+  }
+
+  OnInit() {
+    this.fetchclassService.fetchClasses();
+  }
 }
