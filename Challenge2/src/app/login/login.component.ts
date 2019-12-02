@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchAttendanceService } from '../fetch-attendance.service';
+import { FetchClassService } from '../fetch-class.service';
+
 
 @Component({
   selector: 'app-login',
@@ -7,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public fetchattendanceService: FetchAttendanceService) { }
+save(pass: string){
+  this.fetchattendanceService.secret = pass;
+}
   ngOnInit() {
   }
 

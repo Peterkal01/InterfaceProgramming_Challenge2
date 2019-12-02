@@ -8,7 +8,7 @@ import { ConnectableObservable } from 'rxjs';
 })
 export class FetchAttendanceService {
   attendance: AAttendance[] = [];
-  secret: string = "password";
+  secret: string = " ";
   constructor(private http: HttpClient) { }
 
   fetchAttendance (id: string) {
